@@ -1,5 +1,5 @@
 <script>
-  let promise = getRandomNumber();
+  let promise;
 
   async function getRandomNumber() {
     const res = await fetch(`.netlify/functions/random-number`);
