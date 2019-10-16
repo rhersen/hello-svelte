@@ -2,7 +2,7 @@
   let promise = getRandomNumber();
 
   async function getRandomNumber() {
-    const res = await fetch(`random-number`);
+    const res = await fetch(`/random-number`);
     const text = await res.text();
 
     if (res.ok) {
