@@ -2,7 +2,7 @@
   let promise;
 
   async function getRandomNumber() {
-    const res = await fetch(`.netlify/functions/random-number`);
+    const res = await fetch(`.netlify/functions/node-fetch/direction=n`);
     const text = await res.text();
 
     if (res.ok) {
